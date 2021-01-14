@@ -24,8 +24,8 @@
       </div>
    </section>
 
-   {{-- Product Terlaris --}}
-   <section class="best-product">
+   {{-- Product --}}
+   <section class="product">
       <div class="row mt-4">
          <div class="col-md-12">
             <h3>Product Terlaris</h3>

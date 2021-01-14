@@ -13,6 +13,18 @@
             <li class="nav-item">
                  <a class="nav-link" href="{{ route('home') }}">Home</a>
              </li>
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Daftar Liga
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                @foreach($ligas as $liga)
+                 <a class="dropdown-item" href="#">{{ $liga->nama }}</a>
+                 @endforeach
+                 <div class="dropdown-divider"></div>
+                 <a class="dropdown-item" href="{{ route('products') }}">Semua Jersey</a>
+               </div>
+             </li>
            </ul>
 
            <!-- Right Side Of Navbar -->
