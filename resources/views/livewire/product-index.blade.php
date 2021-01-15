@@ -34,7 +34,7 @@
                      <div class="col-md-12">
                         <h5><strong>{{ $product->nama }}</strong></h5>
                         <h5>Rp.{{ number_format($product->harga,0,',','.') }}</h5>
-                        <a href="" class="btn btn-dark btn-block">Detail</a>
+                        <a href="{{ route('product.detail', $product->id) }}" class="btn btn-dark btn-block">Detail</a>
                      </div>
                   </div>
                </div>
