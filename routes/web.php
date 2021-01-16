@@ -20,3 +20,5 @@ Route::livewire('/products', 'product-index')->name('products');
 Route::livewire('/products/liga/{id}', 'product-liga')->name('products.liga');
 Route::livewire('/product/{id}', 'product-detail')->name('product.detail');
 Route::livewire('/keranjang', 'keranjang')->name('keranjang');
+Route::livewire('/checkout', 'checkout')->name('checkout');
+Route::livewire('/history', 'history')->name('history');
