@@ -41,7 +41,7 @@
                    @endif
                @else
                     <li class="nav-item">
-                       <a class="nav-link" href="">Keranjang 
+                       <a class="nav-link" href="{{ route('keranjang') }}">Keranjang 
                         @if($jumlah_pesanan != 0)
                         <span class="badge badge-danger">{{ $jumlah_pesanan }}</span>
                         @endif

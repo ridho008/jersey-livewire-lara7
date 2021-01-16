@@ -36,16 +36,5 @@
         @include('layouts.footer')
     </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-<script>
-    document.querySelector(".tombolPesan").addEventListener('click', function(){
-  Swal.fire({
-  title: 'Error!',
-  text: 'Do you want to continue',
-  icon: 'error',
-  confirmButtonText: 'Cool'
-})
-});
-    
-</script>
 </body>
 </html>
