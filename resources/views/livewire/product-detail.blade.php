@@ -117,7 +117,7 @@
                   @endif
                   <tr>
                      <td colspan="3">
-                        <button class="btn btn-dark btn-block @if($product->is_ready !== 1) disabled @endif" type="submit">Masukan Keranjang</button>
+                        <button class="tombolPesan btn btn-dark btn-block @if($product->is_ready !== 1) disabled @endif" type="submit">Masukan Keranjang</button>
                      </td>
                   </tr>
                </table>

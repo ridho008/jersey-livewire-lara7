@@ -7,6 +7,7 @@ use App\Product;
 use App\Pesanan;
 use App\PesananDetail;
 use Auth;
+use Alert;
 
 class ProductDetail extends Component
 {
@@ -73,7 +74,10 @@ class ProductDetail extends Component
       'total_harga' => $total_harga
     ]);
 
+    // emit = sebagai update jumlah keranjang realtime
+      $this->emit('masukKeranjang');
      session()->flash('message', 'Pesanan Berhasil Dimasukan keranjang.');
+      // alert()->success('Berhasil', 'Pesanan Berhasil Dimasukan keranjang.');
      return redirect()->back();
 
    }
